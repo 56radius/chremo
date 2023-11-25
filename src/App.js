@@ -4,6 +4,7 @@ import SplashScreen from "./components/SplashScreen";
 import LoginScreen from "./components/LoginScreen";
 import RegisterScreen from "./components/RegisterScreen";
 import DashboardScreen from "./components/DashboardScreen";
+import AttackStatusScreen from "./components/AttackStatusScreen";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -26,7 +27,7 @@ function App() {
           />
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/dashboard" element={<DashboardScreen />} />
-         
+          <Route path="/status" element={<AttackStatusScreen />} />
         </Routes>
       </div>
     </Router>

@@ -9,7 +9,7 @@ import ".././assets/vendor/glightbox/css/glightbox.min.css";
 import ".././assets/vendor/remixicon/remixicon.css";
 import ".././assets/vendor/swiper/swiper-bundle.min.css";
 
-function DashboardScreen() {
+function AttackStatusScreen() {
   const navigate = useNavigate();
   return (
     <div>
@@ -81,9 +81,8 @@ function DashboardScreen() {
                       </p>
                     </div>{" "}
                     <p style={{ textAlign: "center", fontWeight: "bold" }}>
-                      {" "}
-                      Application Layer{" "}
-                    </p>{" "}
+                      Transport Layer . Application Layer . Network Layer
+                    </p>
                     <div
                       className="col-12"
                       style={{
@@ -99,9 +98,9 @@ function DashboardScreen() {
                         className="btn btn-primary w-100"
                         name="login"
                         type="submit"
-                        onClick={() => navigate("/status")}
+                        onClick={() => navigate("/dashboard")}
                       >
-                        Predict
+                        Attack Status
                       </button>
                     </div>
                   </div>
@@ -115,4 +114,4 @@ function DashboardScreen() {
   );
 }
 
-export default DashboardScreen;
+export default AttackStatusScreen;
