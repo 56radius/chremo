@@ -60,7 +60,7 @@ function AttackStatusScreen() {
           </div>
 
           {/* Right side - Login Form */}
-          <div className="col-md-6">
+          <div className="col-md-6" style={{ top: 50 }}>
             <section className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
               <div className="container">
                 <div className="card mb-3">
@@ -83,11 +83,23 @@ function AttackStatusScreen() {
                     <p style={{ textAlign: "center", fontWeight: "bold" }}>
                       Transport Layer . Application Layer . Network Layer
                     </p>
+                    {/* Card showing if attack is going to be successful or not successful */}
+                    <div
+                      style={{
+                        width: "80%",
+                        height: "200px",
+                        margin: "0 auto",
+                      }}
+                      className="card mb-3"
+                    >
+                      <div className="card-body"></div>
+                    </div>
+                    {/* Button for the attack status */}
                     <div
                       className="col-12"
                       style={{
                         margin: "0 auto",
-                        width: "50%",
+                        width: "30%",
                       }}
                     >
                       <button
