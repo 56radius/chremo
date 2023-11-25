@@ -155,7 +155,7 @@ h6 {
 .navbar .getstarted:focus {
   padding: 6px 25px;
   margin-left: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #fff;
   border: 2px solid blue;
 }

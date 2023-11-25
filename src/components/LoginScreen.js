@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ".././assets/css/style.css";
 import logo from ".././assets/img/chremo.jpg";
 import ".././assets/vendor/bootstrap/css/bootstrap.min.css";
@@ -9,6 +10,7 @@ import ".././assets/vendor/remixicon/remixicon.css";
 import ".././assets/vendor/swiper/swiper-bundle.min.css";
 
 function LoginScreen() {
+  const navigate = useNavigate();
   return (
     <div>
       <header id="header" className="fixed-top">
@@ -23,6 +25,8 @@ function LoginScreen() {
                 <a
                   style={{
                     borderRadius: "20px",
+                    textDecoration: "none",
+                    background: "blue",
                   }}
                   className="getstarted scrollto"
                   href="dashboard/login.php"
@@ -42,7 +46,9 @@ function LoginScreen() {
         <div className="row justify-content-center align-items-center">
           {/* Left side - Logo */}
           <div className="col-md-6">
-            <img src={logo} alt="logo" style={{ width: "70%" }} />
+            <div className="card" style={{ padding: "70px" }}>
+              <img src={logo} alt="logo" style={{ width: "100%" }} />
+            </div>
           </div>
 
           {/* Right side - Login Form */}
@@ -53,7 +59,9 @@ function LoginScreen() {
                   <div className="card-body">
                     <div className="pt-4 pb-2">
                       <h5
-                        style={{ fontWeight: "bold" }}
+                        style={{
+                          fontWeight: "bold",
+                        }}
                         className="card-title text-center pb-0 fs-4"
                       >
                         {" "}
@@ -110,6 +118,7 @@ function LoginScreen() {
                           className="btn btn-primary w-100"
                           name="login"
                           type="submit"
+                          onClick={() => navigate("/dashboard")}
                         >
                           Login
                         </button>
