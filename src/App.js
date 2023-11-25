@@ -4,6 +4,7 @@ import SplashScreen from "./components/SplashScreen";
 import LoginScreen from "./components/LoginScreen";
 import RegisterScreen from "./components/RegisterScreen";
 import DashboardScreen from "./components/DashboardScreen";
+import ApplicationLayerScreen from "./components/ApplicationLayerScreen";
 import AttackStatusScreen from "./components/AttackStatusScreen";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           />
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/dashboard" element={<DashboardScreen />} />
+          <Route path="/application" element={<ApplicationLayerScreen />} />
           <Route path="/status" element={<AttackStatusScreen />} />
         </Routes>
       </div>

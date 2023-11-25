@@ -9,7 +9,7 @@ import ".././assets/vendor/glightbox/css/glightbox.min.css";
 import ".././assets/vendor/remixicon/remixicon.css";
 import ".././assets/vendor/swiper/swiper-bundle.min.css";
 
-function DashboardScreen() {
+function ApplicationLayerScreen() {
   const navigate = useNavigate();
   return (
     <div>
@@ -79,14 +79,16 @@ function DashboardScreen() {
                         {" "}
                         Security State{" "}
                       </p>
-                    </div>
-
-                    {/* Application layer button */}
+                    </div>{" "}
+                    <p style={{ textAlign: "center", fontWeight: "bold" }}>
+                      {" "}
+                      Application Layer{" "}
+                    </p>{" "}
                     <div
                       className="col-12"
                       style={{
                         margin: "0 auto",
-                        width: "70%",
+                        width: "50%",
                       }}
                     >
                       <button
@@ -97,76 +99,10 @@ function DashboardScreen() {
                         className="btn btn-primary w-100"
                         name="login"
                         type="submit"
-                        onClick={() => navigate("/application")}
+                        onClick={() => navigate("/status")}
                       >
-                        Application Layer
+                        Predict
                       </button>
-                    </div>
-
-                    {/* Small card containing the three buttons */}
-                    <div className="card-body">
-                      <div
-                        className="col-12"
-                        style={{
-                          margin: "0 auto",
-                          width: "70%",
-                        }}
-                      >
-                        <button
-                          style={{
-                            backgroundColor: "#55a5f5",
-                            borderColor: "#55a5f5",
-                          }}
-                          className="btn btn-primary w-100"
-                          name="login"
-                          type="submit"
-                          onClick={() => navigate("/application")}
-                        >
-                          Application Layer
-                        </button>
-                      </div>
-
-                      <div
-                        className="col-12"
-                        style={{
-                          margin: "0 auto",
-                          width: "70%",
-                        }}
-                      >
-                        <button
-                          style={{
-                            backgroundColor: "#55a5f5",
-                            borderColor: "#55a5f5",
-                          }}
-                          className="btn btn-primary w-100"
-                          name="login"
-                          type="submit"
-                          onClick={() => navigate("/application")}
-                        >
-                          Application Layer
-                        </button>
-                      </div>
-
-                      <div
-                        className="col-12"
-                        style={{
-                          margin: "0 auto",
-                          width: "70%",
-                        }}
-                      >
-                        <button
-                          style={{
-                            backgroundColor: "#55a5f5",
-                            borderColor: "#55a5f5",
-                          }}
-                          className="btn btn-primary w-100"
-                          name="login"
-                          type="submit"
-                          onClick={() => navigate("/application")}
-                        >
-                          Application Layer
-                        </button>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -179,4 +115,4 @@ function DashboardScreen() {
   );
 }
 
-export default DashboardScreen;
+export default ApplicationLayerScreen;
