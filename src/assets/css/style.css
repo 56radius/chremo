@@ -64,8 +64,8 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
-  background: lightblue;
+  padding: 5px 0;
+  background: #55a5f5;
 }
 
 #header.header-scrolled,
@@ -155,15 +155,15 @@ h6 {
 .navbar .getstarted:focus {
   padding: 6px 25px;
   margin-left: 30px;
-  border-radius: 50px;
-  color: black;
-  border: 2px solid green;
+  border-radius: 30px;
+  color: #fff;
+  border: 2px solid blue;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: green;
+  background: blue;
 }
 
 .navbar .dropdown ul {

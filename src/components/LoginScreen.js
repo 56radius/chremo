@@ -20,7 +20,13 @@ function LoginScreen() {
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <a className="getstarted scrollto" href="dashboard/login.php">
+                <a
+                  style={{
+                    borderRadius: "20px",
+                  }}
+                  className="getstarted scrollto"
+                  href="dashboard/login.php"
+                >
                   {" "}
                   Register{" "}
                 </a>
@@ -36,7 +42,7 @@ function LoginScreen() {
         <div className="row justify-content-center align-items-center">
           {/* Left side - Logo */}
           <div className="col-md-6">
-            <img src={logo} alt="logo" style={{ width: "100%" }} />
+            <img src={logo} alt="logo" style={{ width: "70%" }} />
           </div>
 
           {/* Right side - Login Form */}
@@ -97,8 +103,8 @@ function LoginScreen() {
                       <div className="col-12">
                         <button
                           style={{
-                            backgroundColor: "lightblue",
-                            borderColor: "lightblue",
+                            backgroundColor: "#55a5f5",
+                            borderColor: "#55a5f5",
                             width: "50%",
                           }}
                           className="btn btn-primary w-100"
