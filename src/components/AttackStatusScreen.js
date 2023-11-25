@@ -60,10 +60,10 @@ function AttackStatusScreen() {
           </div>
 
           {/* Right side - Login Form */}
-          <div className="col-md-6" style={{ top: 50 }}>
+          <div className="col-md-6">
             <section className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
               <div className="container">
-                <div className="card mb-3">
+                <div style={{ marginTop: 50 }} className="card mb-3">
                   <div className="card-body">
                     <div className="pt-4 pb-2">
                       <h5
@@ -89,6 +89,7 @@ function AttackStatusScreen() {
                         width: "80%",
                         height: "200px",
                         margin: "0 auto",
+                        background: "#a7a4a44a",
                       }}
                       className="card mb-3"
                     >
