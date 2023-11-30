@@ -110,6 +110,7 @@ function DashboardScreen() {
                         style={{
                           margin: "0 auto",
                           width: "70%",
+                          marginTop: 5,
                         }}
                       >
                         <button
@@ -122,7 +123,7 @@ function DashboardScreen() {
                           type="submit"
                           onClick={() => navigate("/application")}
                         >
-                          Application Layer
+                          Transport Layer
                         </button>
                       </div>
 
@@ -131,6 +132,7 @@ function DashboardScreen() {
                         style={{
                           margin: "0 auto",
                           width: "70%",
+                          marginTop: 5,
                         }}
                       >
                         <button
@@ -143,7 +145,7 @@ function DashboardScreen() {
                           type="submit"
                           onClick={() => navigate("/application")}
                         >
-                          Application Layer
+                          Internet Layer
                         </button>
                       </div>
 
@@ -152,6 +154,7 @@ function DashboardScreen() {
                         style={{
                           margin: "0 auto",
                           width: "70%",
+                          marginTop: 5,
                         }}
                       >
                         <button
@@ -164,7 +167,7 @@ function DashboardScreen() {
                           type="submit"
                           onClick={() => navigate("/application")}
                         >
-                          Application Layer
+                          Network Layer
                         </button>
                       </div>
                     </div>
