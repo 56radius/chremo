@@ -16,15 +16,7 @@ function DashboardScreen() {
       <header id="header" className="fixed-top">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
-            <h1 class="logo">
-              <a
-                style={{ textDecoration: "none", color: "#fff", fontSize: 17 }}
-                href="index.html"
-              >
-                {" "}
-                Welcome Dr.Jet{" "}
-              </a>
-            </h1>
+            <h1 class="logo"></h1>
           </h1>
 
           <nav id="navbar" className="navbar">
@@ -49,18 +41,15 @@ function DashboardScreen() {
         </div>
       </header>
 
-      {/* Logo and Login Form using Bootstrap Grid */}
       <div className="container">
         <div className="row justify-content-center align-items-center">
-          {/* Left side - Logo */}
-          <div className="col-md-6">
+          <div className="col-md-6 order-md-2">
             <div className="card" style={{ padding: "70px" }}>
               <img src={logo} alt="logo" style={{ width: "100%" }} />
             </div>
           </div>
 
-          {/* Right side - Login Form */}
-          <div className="col-md-6">
+          <div className="col-md-6 order-md-1">
             <section className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
               <div className="container">
                 <div className="card mb-3">
@@ -81,7 +70,6 @@ function DashboardScreen() {
                       </p>
                     </div>
 
-                    {/* Application layer button */}
                     <div
                       className="col-12"
                       style={{
@@ -103,7 +91,6 @@ function DashboardScreen() {
                       </button>
                     </div>
 
-                    {/* Small card containing the three buttons */}
                     <div className="card-body">
                       <div
                         className="col-12"
